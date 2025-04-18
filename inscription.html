@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSCRIPTION.EI</title>
+    <link rel="stylesheet" href="inscription.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">ETUDIANT.INFORMATIQUE</div>
+            <ul class="navbar-links">
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <div class="underline"></div>
+        </nav>
+    </header>
+    <div class="signup-container">
+        <h2>Inscription</h2>
+        <form action="#" method="post">
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="signup-username" name="username" placeholder="Nom d'utilisateur" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="signup-email" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="signup-password" name="password" placeholder="Mot de passe" required>
+                <i class="fas fa-eye-slash" id="toggleSignupPassword"></i>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmer le mot de passe" required>
+            </div>
+            <button type="submit"><a href="se connecter.html"></a>S'inscrire</button>
+        </form>
+        <div class="extra-links">
+            <a href="br.html">Déjà un compte ? Se connecter</a>
+        </div>
+    </div>
+    <script src="inscription.js"></script>   
+</body>
+</html>

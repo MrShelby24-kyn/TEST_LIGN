@@ -1,0 +1,212 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
+}
+
+body{
+  background: linear-gradient(to right ,#5cb85c ,#333);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100vh;
+ 
+}
+
+header{
+   background-color: #5cb85c;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1000;
+   animation: slideDown 1s ease-out;
+}
+@keyframes slideDown{
+   from{
+      transform: translateY(-100%);
+   }
+   to{
+      transform: translateY(0);
+   }
+}
+
+.navbar{
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+   position: relative;
+   
+}
+
+.navbar-brand {
+
+   color: white;
+   font-size: 24px;
+   font-weight: bold;
+   opacity: 0;
+   animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+   to{
+      opacity: 1;
+   }
+}
+
+.navbar-links{
+   list-style: none;
+   display: flex;
+   opacity: 0;
+   animation: fadeIn 2s forwards;
+}
+
+.navbar-links li{
+
+   margin: 0 15px;
+}
+
+.navbar-links a{
+
+   color: white;
+   text-decoration: none;
+   font-size: 16px;
+}
+
+.navbar-links a:hover{
+
+   text-decoration: underline;
+}
+.login-container{
+
+   background-color: #fff;
+   padding: 20px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+   width: 300px;
+   margin-top: 80px;
+   opacity: 0;
+   animation: fadeInUp 1s forwards;
+}
+@keyframes fadeInUp{
+     from{
+      transform: translateY(20px);
+      opacity: 0;
+     }
+     to{
+        transform: translateY(0);
+        opacity: 1;
+     }
+}
+
+.login-container h2{
+
+   margin-bottom: 20px;
+   text-align: center;
+   color: #333;
+}
+
+.input-group{
+   margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+
+.input-group i{
+   margin-right: 10px;
+  
+   color: #333;
+}
+
+.input-group input{
+
+border: none;
+outline: none;
+flex: 1;
+
+}
+
+button{
+
+   width: 100%;
+   padding: 10px;
+   border: none;
+   border-radius: 4px;
+   background-color: #5cb85c;
+   color: white;
+   font-size: 16px;
+   cursor: pointer;
+   opacity: 0;
+   animation: fadeInUp 1s forwards 0.5s;
+}
+  
+button:hover{
+   background-color: #4cae4c;
+}
+
+.extra-links{
+   margin-top: 15px;
+   text-align: center;
+   opacity: 0;
+   animation: fadeInUp 1s forwards 0.5s;
+}
+
+.extra-links a{
+
+   color: #5cb85c;
+   text-decoration: none;
+   margin: 0 10px;
+   font-size: 14px;
+}
+
+.extra-links a:hover{
+   text-decoration: underline;
+   
+   
+}
+.underline {
+   height: 2px;
+   width: 0;
+   background-color: white;
+   position: absolute;
+   bottom: -2px;
+   left: 0;
+   transition: width 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
