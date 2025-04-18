@@ -173,3 +173,89 @@ button {
 button:hover {
     background-color: #4cae4c;
 }
+/* Media Queries pour les tablettes et mobiles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 10px;
+    }
+
+    .navbar-brand {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar-links li {
+        margin: 0;
+    }
+
+    .navbar-links a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .about h2,
+    .contact h2 {
+        font-size: 22px;
+    }
+
+    .about p,
+    .contact p {
+        font-size: 14px;
+    }
+
+    .hero .btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+/* Media Queries pour les mobiles uniquement */
+@media screen and (max-width: 480px) {
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .about h2,
+    .contact h2 {
+        font-size: 20px;
+    }
+
+    .about p,
+    .contact p {
+        font-size: 13px;
+    }
+
+    .hero .btn {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+}
+
+/* Amélioration de la lisibilité sur tous les écrans */
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+    }
+}
